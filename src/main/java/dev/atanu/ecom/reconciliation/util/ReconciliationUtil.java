@@ -80,7 +80,7 @@ public class ReconciliationUtil {
 		try {
 			str = mapper.writeValueAsString(object);
 		} catch (JsonProcessingException e) {
-			logger.debug("Error while converting object to string", e);
+			logger.error("Error while converting object to string", e);
 		}
 		return str;
 	}
